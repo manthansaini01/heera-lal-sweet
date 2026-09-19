@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Heera Lal Sweet | Traditional Indian Sweets</title>
+
+  <meta name="description" content="Heera Lal Sweet - Traditional Indian sweets and snacks in Bhajeet, Alwar, Rajasthan.">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #fffaf3;
+      color: #2b2118;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    button,
+    input {
+      font: inherit;
+    }
+
+    /* NAVBAR */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(255, 250, 243, 0.96);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid #eadcc9;
+    }
+
+    .nav {
+      max-width: 1180px;
+      margin: auto;
+      padding: 14px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .logo {
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      background: #6f351c;
+      color: #fff;
+      border: 3px solid #d9a441;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 17px;
+      position: relative;
+      box-shadow: 0 5px 15px rgba(70, 35, 15, 0.15);
+    }
+
+    .logo::after {
+      content: "🍬";
+      position: absolute;
+      right: -9px;
+      bottom: -7px;
+      font-size: 18px;
+      background: #fffaf3;
+      border-radius: 50%;
+    }
+
+    .brand-text strong {
+      display: block;
+      font-size: 20px;
+      color: #6f351c;
+    }
+
+    .brand-text span {
+      font-size: 11px;
+      color: #876f5b;
+      letter-spacing: 1px;
+    }
+
+    nav {
+      display: flex;
+      gap: 24px;
+    }
+
+    nav a {
+      font-size: 14px;
+      font-weight: 600;
+      color: #604a39;
+    }
+
+    nav a:hover {
+      color: #a85a26;
+    }
+
+    /* HERO */
+    .hero {
+      max-width: 1180px;
+      margin: auto;
+      padding: 70px 20px;
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 45px;
+      align-items: center;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #f4e4c8;
+      color: #75411f;
+      padding: 7px 13px;
+      border-radius: 30px;
+      font-size: 13px;
+      font-weight: bold;
+      margin-bottom: 18px;
+    }
+
+    .hero h1 {
+      font-size: clamp(40px, 6vw, 68px);
+      line-height: 1.05;
+      color: #5b2d18;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 span {
+      color: #b27620;
+    }
+
+    .hero p {
+      max-width: 600px;
+      color: #6d5b4b;
+      font-size: 17px;
+      margin-bottom: 28px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 13px 20px;
+      border-radius: 12px;
+      border: 1px solid #6f351c;
+      background: #6f351c;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      opacity: 0.9;
+    }
+
+    .btn-light {
+      background: white;
+      color: #6f351c;
+    }
+
+    .hero-card {
+      background: white;
+      border-radius: 28px;
+      overflow: hidden;
+      box-shadow: 0 18px 50px rgba(70, 35, 15, 0.14);
+      border: 1px solid #eadcc9;
+    }
+
+    .hero-card img {
+      width: 100%;
+      height: 430px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .hero-card-info {
+      padding: 20px;
+    }
+
+    .hero-card-info h3 {
+      color: #6f351c;
+      margin-bottom: 5px;
+    }
+
+    /* SECTIONS */
+    section {
+      padding: 75px 20px;
+    }
+
+    .section-inner {
+      max-width: 1180px;
+      margin: auto;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 38px;
+    }
+
+    .section-title small {
+      color: #a85a26;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    .section-title h2 {
+      font-size: 38px;
+      color: #5b2d18;
+      margin-top: 8px;
+    }
+
+    .section-title p {
+      max-width: 650px;
+      margin: 10px auto 0;
+      color: #756557;
+    }
+
+    /* MENU */
+    #menu {
+      background: #fff;
+    }
+
+    .filters {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 30px;
+    }
+
+    .filter-btn {
+      padding: 9px 17px;
+      border: 1px solid #d9c5ad;
+      background: #fffaf3;
+      color: #684c38;
+      border-radius: 30px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .filter-btn.active,
+    .filter-btn:hover {
+      background: #6f351c;
+      color: white;
+      border-color: #6f351c;
+    }
+
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .food-card {
+      background: white;
+      border: 1px solid #eadcc9;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 8px 25px rgba(70, 35, 15, 0.07);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .food-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 14px 32px rgba(70, 35, 15, 0.13);
+    }
+
+    .food-card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      display: block;
+      background: #f1e5d6;
+    }
+
+    .food-content {
+      padding: 18px;
+    }
+
+    .food-content h3 {
+      color: #5b2d18;
+      margin-bottom: 6px;
+    }
+
+    .food-content p {
+      color: #756557;
+      font-size: 14px;
+      min-height: 45px;
+      margin-bottom: 12px;
+    }
+
+    .food-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .price {
+      color: #a85a26;
+      font-weight: bold;
+      font-size: 13px;
+    }
+
+    .recipe-btn {
+      border: none;
+      background: #f3e1c5;
+      color: #6f351c;
+      padding: 9px 12px;
+      border-radius: 9px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .recipe-btn:hover {
+      background: #e8cfa8;
+    }
+
+    /* AI */
+    #recipe {
+      background: #f4eadc;
+    }
+
+    .ai-box {
+      max-width: 850px;
+      margin: auto;
+      background: #fff;
+      border-radius: 25px;
+      padding: 28px;
+      border: 1px solid #eadcc9;
+      box-shadow: 0 15px 40px rgba(70, 35, 15, 0.09);
+    }
+
+    .ai-header {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 20px;
+    }
+
+    .ai-icon {
+      width: 52px;
+      height: 52px;
+      border-radius: 15px;
+      background: #6f351c;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 25px;
+    }
+
+    .ai-header h3 {
+      color: #5b2d18;
+    }
+
+    .ai-header p {
+      font-size: 13px;
+      color: #806e5d;
+    }
+
+    .quick {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 18px;
+    }
+
+    .quick button {
+      border: 1px solid #dfcdb7;
+      background: #fffaf3;
+      padding: 8px 12px;
+      border-radius: 20px;
+      cursor: pointer;
+      color: #684c38;
+      font-size: 13px;
+    }
+
+    .input-row {
+      display: flex;
+      gap: 10px;
+    }
+
+    .input-row input {
+      flex: 1;
+      min-width: 0;
+      padding: 14px;
+      border: 1px solid #d9c5ad;
+      border-radius: 12px;
+      outline: none;
+    }
+
+    .input-row input:focus {
+      border-color: #a85a26;
+    }
+
+    .ask-btn {
+      border: none;
+      background: #6f351c;
+      color: white;
+      padding: 0 20px;
+      border-radius: 12px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .recipe-result {
+      margin-top: 22px;
+    }
+
+    .welcome {
+      background: #fffaf3;
+      padding: 18px;
+      border-radius: 14px;
+      color: #6d5b4b;
+      text-align: center;
+    }
+
+    .recipe-card {
+      background: #fffaf3;
+      border: 1px solid #eadcc9;
+      border-radius: 18px;
+      padding: 22px;
+    }
+
+    .recipe-card h3 {
+      color: #6f351c;
+      margin-bottom: 5px;
+    }
+
+    .recipe-card .subtitle {
+      color: #806e5d;
+      font-size: 13px;
+      margin-bottom: 18px;
+    }
+
+    .recipe-columns {
+      display: grid;
+      grid-template-columns: 0.8fr 1.2fr;
+      gap: 25px;
+    }
+
+    .recipe-card h4 {
+      color: #a85a26;
+      margin-bottom: 8px;
+    }
+
+    .recipe-card ul,
+    .recipe-card ol {
+      padding-left: 20px;
+      color: #5f5042;
+    }
+
+    .recipe-card li {
+      margin-bottom: 7px;
+    }
+
+    .tip {
+      margin-top: 18px;
+      padding: 13px;
+      border-left: 4px solid #d9a441;
+      background: #f8eddb;
+      color: #654d38;
+      border-radius: 7px;
+      font-size: 14px;
+    }
+
+    /* ABOUT */
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 25px;
+    }
+
+    .info-card {
+      background: white;
+      padding: 28px;
+      border-radius: 20px;
+      border: 1px solid #eadcc9;
+    }
+
+    .info-card h3 {
+      color: #6f351c;
+      margin-bottom: 10px;
+    }
+
+    .info-card p {
+      color: #705f50;
+    }
+
+    /* CONTACT */
+    #contact {
+      background: #5b2d18;
+      color: white;
+    }
+
+    .contact-title {
+      text-align: center;
+      margin-bottom: 35px;
+    }
+
+    .contact-title h2 {
+      font-size: 38px;
+      margin-bottom: 8px;
+    }
+
+    .contact-title p {
+      color: #ead7c1;
+    }
+
+    .contact-grid {
+      max-width: 1000px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .contact-card {
+      background: rgba(255,255,255,0.09);
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 18px;
+      padding: 22px;
+      text-align: center;
+    }
+
+    .contact-card .emoji {
+      font-size: 28px;
+      margin-bottom: 8px;
+    }
+
+    .contact-card h3 {
+      margin-bottom: 5px;
+    }
+
+    .contact-card p,
+    .contact-card a {
+      color: #ead7c1;
+      font-size: 14px;
+    }
+
+    .contact-buttons {
+      max-width: 500px;
+      margin: 30px auto 0;
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .contact-buttons a {
+      padding: 12px 18px;
+      border-radius: 10px;
+      background: white;
+      color: #5b2d18;
+      font-weight: bold;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #3d2115;
+      color: #d9c4ad;
+      text-align: center;
+      padding: 22px;
+      font-size: 13px;
+    }
+
+    footer a {
+      text-decoration: underline;
+    }
+
+    /* MOBILE */
+    @media (max-width: 900px) {
+      .hero {
+        grid-template-columns: 1fr;
+      }
+
+      .menu-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .about-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 650px) {
+      nav {
+        display: none;
+      }
+
+      .nav {
+        padding: 12px 15px;
+      }
+
+      .hero {
+        padding: 45px 15px;
+      }
+
+      section {
+        padding: 55px 15px;
+      }
+
+      .hero-card img {
+        height: 300px;
+      }
+
+      .menu-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .recipe-columns {
+        grid-template-columns: 1fr;
+      }
+
+      .input-row {
+        flex-direction: column;
+      }
+
+      .ask-btn {
+        padding: 13px;
+      }
+
+      .brand-text strong {
+        font-size: 17px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVIGATION -->
+  <header>
+    <div class="nav">
+
+      <a href="#home" class="brand">
+        <div class="logo">HL</div>
+
+        <div class="brand-text">
+          <strong>Heera Lal Sweet</strong>
+          <span>TRADITIONAL SWEETS • BHAJEET</span>
+        </div>
+      </a>
+
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#recipe">Recipe AI</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+    </div>
+  </header>
+
+
+  <!-- HERO -->
+  <main>
+
+    <section id="home">
+      <div class="hero">
+
+        <div>
+          <span class="tag">🍬 Traditional Indian Mithai</span>
+
+          <h1>
+            Taste the tradition of
+            <span>Heera Lal Sweet</span>
+          </h1>
+
+          <p>
+            Fresh Indian sweets and snacks made with traditional taste,
+            quality ingredients and the warmth of a local sweet shop.
+          </p>
+
+          <div class="buttons">
+            <a href="#menu" class="btn">Explore Menu</a>
+            <a href="#recipe" class="btn btn-light">Ask Recipe AI</a>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <img
+            src="https://commons.wikimedia.org/wiki/Special:FilePath/Milk%20Cake.jpg?width=1200"
+            alt="Traditional Milk Cake / Kalakand"
+            loading="eager"
+          >
+
+          <div class="hero-card-info">
+            <h3>⭐ Our Special: Kalakand / Milk Cake</h3>
+            <p>Rich, milky and traditionally prepared.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- MENU -->
+    <section id="menu">
+
+      <div class="section-inner">
+
+        <div class="section-title">
+          <small>Our Menu</small>
+          <h2>Fresh Sweets & Snacks</h2>
+          <p>
+            Choose your favourite item and ask our recipe assistant
+            how it is prepared.
+          </p>
+        </div>
+
+        <div class="filters">
+          <button class="filter-btn active" onclick="filterMenu('all', this)">All</button>
+          <button class="filter-btn" onclick="filterMenu('sweet', this)">Sweets</button>
+          <button class="filter-btn" onclick="filterMenu('snack', this)">Snacks</button>
+        </div>
+
+
+        <div class="menu-grid" id="menuGrid">
+
+          <!-- KALAKAND -->
+          <article class="food-card" data-category="sweet">
+            <img
+              src="https://commons.wikimedia.org/wiki/Special:FilePath/Milk%20Cake.jpg?width=900"
+              alt="Kalakand Milk Cake"
+              loading="lazy"
+            >
+
+            <div class="food-content">
+              <h3>⭐ Kalakand / Milk Cake</h3>
+
+              <p>
+                Soft, grainy and rich milk-based traditional sweet.
+              </p>
+
+              <div class="food-meta">
+                <span class="price">Price on request</span>
+
+                <button class="recipe-btn"
+                  onclick="openRecipe('kalakand')">
+                  Recipe
+                </button>
+              </div>
+            </div>
+          </article>
+
+
+          <!-- GULAB JAMUN -->
+          <article class="food-card" data-category="sweet">
+            <img
+              src="https://commons.wikimedia.org/wiki/Special:FilePath/Gulab%20jamun%20sweet.jpg?width=900"
+              alt="Gulab Jamun"
+              loading="lazy"
+            >
+
+            <div class="food-content">
+              <h3>Gulab Jamun</h3>
+
+              <p>
+                Soft milk-based dumplings soaked in sweet sugar syrup.
+              </p>
+
+              <div class="food-meta">
+                <span class="price">Price on request</span>
+
+                <button class="recipe-btn"
+                  onclick="openRecipe('gulab jamun')">
+                  Recipe
+                </button>
+              </div>
+            </div>
+          </article>
+
+
+          <!-- RASGULLA -->
+          <article class="food-card" data-category="sweet">
+            <img
+              src="https://commons.wikimedia.org/wiki/Special:FilePath/Rasgulla.jpg?width=900"
+              alt="Rasgulla"
+              loading="lazy"
+            >
+
+            <div class="food-content">
+              <h3>Rasgulla</h3>
+
+              <p>
+                Soft chenna balls cooked in light sugar syrup.
+              </p>
+
+              <div class="food-meta">
+                <span class="price">Price on request</span>
+
+                <button class="recipe-btn"
+                  onclick="openRecipe('rasgulla')">
+                  Recipe
+                </button>
+              </div>
+            </div>
+          </article>
+
+
+          <!-- MOTICHOOR LADDU -->
+          <article class="food-card" data-category="sweet">
+            <img
+              src="https://commons.wikimedia.org/wiki/Special:FilePath/Motichoor%20Laddu.jpg?width=900"
+              alt="Motichoor Laddu"
+              loading="lazy"
+            >
+
+            <div class="food-content">
+              <h3>Motichoor Laddu</h3>
+
+              <p>
+                Tiny boondi pearls combined into a rich festive laddu.
+              </p>
+
+              <div class="food-meta">
+                <span class="price">Price on request</span>
+
+                <button class="recipe-btn"
+                  onclick="openRecipe('motichoor laddu')">
+                  Recipe
+                </button>
+              </div>
+            </div>
+          </article>
+
+
+          <!-- JALEBI -->
+          <article class="food-card" data-category="sweet">
+            <img
+              src="https://commons.wikimedia.org/wiki/Special:FilePath/Jalebi.jpg?width=900"
+              alt="Jalebi"
+              loading="lazy"
+            >
+
+            <div class="food-content">
+              <h3>Jalebi</h3>
+
+              <p>
+                Crispy golden spirals soaked in fragrant sugar syrup.
+              </p>
+
+              <div class="food-meta">
+                <span class="price">Price on request</span>
+
+                <button class="recipe-btn"
+                  onclick="openRecipe('jalebi')">
+                  Recipe
+                </button>
+              </div>
+            </div>
+          </article>
+
+
+          <!-- GHEWAR -->
+          <article class="food-card" data-category="sweet">
+            <img
+              src="https://commons.wikimedia.org/wiki/Special:FilePath/Ghevar.jpg?width=900"
+              alt="Ghewar"
+              loading="lazy"
+            >
+
+            <div class="food-content">
+              <h3>Ghewar</h3>
+
+              <p>
+                Traditional Rajasthani honeycomb-style festive sweet.
+              </p>
+
+              <div class="food-meta">
+                <span class="price">Price on request</span>
+
+                <button class="recipe-btn"
+                  onclick="openRecipe('ghewar')">
+                  Recipe
+                </button>
+              </div>
+            </div>
+          </article>
+
+
+          <!-- SAMOSA -->
+          <article class="food-card" data-category="snack">
+            <img
+              src="https://commons.wikimedia.org/wiki/Special:FilePath/Indian%20samosa.jpg?width=900"
+              alt="Indian Samosa"
+              loading="lazy"
+            >
+
+            <div class="food-content">
+              <h3>Samosa</h3>
+
+              <p>
+                Crispy pastry filled with spiced potato and peas.
+              </p>
+
+              <div class="food-meta">
+                <span class="price">Price on request</span>
+
+                <button class="recipe-btn"
+                  onclick="openRecipe('samosa')">
+                  Recipe
+                </button>
+              </div>
+            </div>
+          </article>
+
+
+          <!-- PYAZ KACHORI -->
+          <article class="food-card" data-category="snack">
+            <img
+              src="https://commons.wikimedia.org/wiki/Special:FilePath/Aloo%20Pyaaz%20Kachori.jpg?width=900"
+              alt="Pyaz Kachori"
+              loading="lazy"
+            >
+
+            <div class="food-content">
+              <h3>Pyaz Kachori</h3>
+
+              <p>
+                Crispy Rajasthani kachori filled with spicy onion masala.
+              </p>
+
+              <div class="food-meta">
+                <span class="price">Price on request</span>
+
+                <button class="recipe-btn"
+                  onclick="openRecipe('pyaz kachori')">
+                  Recipe
+                </button>
+              </div>
+            </div>
