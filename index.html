@@ -3,608 +3,432 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Heera Lal Sweet | Traditional Indian Sweets</title>
+
+<title>Saini Misthan Bhandar | Bhajeet, Alwar</title>
 
 <style>
 *{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
 html{
-  scroll-behavior:smooth;
+    scroll-behavior:smooth;
 }
 
 body{
-  font-family:Arial,Helvetica,sans-serif;
-  background:#fffaf2;
-  color:#3b2116;
-  line-height:1.6;
+    font-family:Arial, Helvetica, sans-serif;
+    background:#fffaf3;
+    color:#3d2418;
+    line-height:1.6;
 }
 
-:root{
-  --brown:#4a2414;
-  --dark:#2b140c;
-  --gold:#d79a2b;
-  --light:#fff7e8;
-  --cream:#fffaf2;
-  --border:#ead7b5;
-}
-
-.container{
-  width:min(1180px,92%);
-  margin:auto;
-}
-
-/* NAVBAR */
-.navbar{
-  position:sticky;
-  top:0;
-  z-index:1000;
-  background:rgba(255,250,242,.97);
-  border-bottom:1px solid #ead7b5;
-  box-shadow:0 4px 18px rgba(50,20,5,.08);
-}
-
-.nav-inner{
-  min-height:78px;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:20px;
+nav{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:#fffaf3;
+    border-bottom:1px solid #ead8c0;
+    padding:14px 6%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
 }
 
 .logo{
-  display:flex;
-  align-items:center;
-  gap:12px;
-  text-decoration:none;
-  color:var(--brown);
+    display:flex;
+    align-items:center;
+    gap:10px;
 }
 
-.logo-mark{
-  width:52px;
-  height:52px;
-  border-radius:50%;
-  display:grid;
-  place-items:center;
-  color:#fff3c7;
-  font-family:Georgia,serif;
-  font-size:23px;
-  font-weight:bold;
-  background:
-    radial-gradient(circle at center,#5b2b18 58%,#d79a2b 60%,#f2c15b 69%,#5b2b18 71%);
-  border:2px solid #c88922;
-  box-shadow:0 3px 10px rgba(60,25,5,.2);
+.logo-circle{
+    width:48px;
+    height:48px;
+    border-radius:50%;
+    background:#6d321f;
+    color:#f4c76b;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:18px;
+    font-weight:bold;
+    border:2px solid #f4c76b;
 }
 
-.logo-text strong{
-  display:block;
-  font-family:Georgia,serif;
-  font-size:24px;
-  line-height:1.05;
+.logo-text h2{
+    font-size:19px;
+    color:#5b291a;
 }
 
 .logo-text span{
-  font-size:10px;
-  letter-spacing:3px;
-  text-transform:uppercase;
-  color:#9a6a24;
+    font-size:11px;
+    color:#8b6a55;
 }
 
-.nav-links{
-  display:flex;
-  gap:8px;
-  list-style:none;
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:25px;
 }
 
-.nav-links a{
-  text-decoration:none;
-  color:#3d2418;
-  padding:10px 14px;
-  border-radius:20px;
-  font-weight:600;
+nav a{
+    text-decoration:none;
+    color:#4d2c1d;
+    font-weight:600;
 }
 
-.nav-links a:hover{
-  background:#f8e7c4;
-  color:#7c4318;
+nav a:hover{
+    color:#a76622;
 }
 
-/* HERO */
 .hero{
-  min-height:560px;
-  display:flex;
-  align-items:center;
-  background:
-    linear-gradient(90deg,rgba(42,18,9,.97) 0%,rgba(65,28,12,.88) 42%,rgba(50,20,8,.35) 75%,rgba(50,20,8,.45)),
-    url("https://commons.wikimedia.org/wiki/Special:FilePath/Milk%20Cake.jpg?width=1400") center/cover;
-  color:white;
+    min-height:520px;
+    display:flex;
+    align-items:center;
+    padding:70px 7%;
+    background:
+      linear-gradient(rgba(48,25,15,.70),rgba(48,25,15,.70)),
+      url("https://commons.wikimedia.org/wiki/Special:FilePath/Milk%20Cake.jpg?width=1400")
+      center/cover;
+    color:white;
 }
 
 .hero-content{
-  max-width:680px;
-  padding:80px 0;
+    max-width:650px;
 }
 
-.badge{
-  display:inline-block;
-  border:1px solid #e8b84d;
-  color:#ffd77a;
-  padding:8px 15px;
-  border-radius:30px;
-  font-size:13px;
-  font-weight:bold;
-  margin-bottom:22px;
+.hero small{
+    color:#f5cc77;
+    font-weight:bold;
+    letter-spacing:2px;
 }
 
 .hero h1{
-  font-family:Georgia,serif;
-  font-size:clamp(42px,7vw,76px);
-  line-height:1;
-  margin-bottom:18px;
-}
-
-.hero h1 span{
-  color:#f2c15b;
+    font-size:clamp(40px,7vw,70px);
+    line-height:1.05;
+    margin:15px 0;
 }
 
 .hero p{
-  max-width:590px;
-  font-size:18px;
-  color:#f7e9d2;
-  margin-bottom:30px;
-}
-
-.btn-row{
-  display:flex;
-  flex-wrap:wrap;
-  gap:12px;
+    font-size:18px;
+    margin-bottom:25px;
+    color:#f5eee7;
 }
 
 .btn{
-  display:inline-block;
-  border:0;
-  border-radius:30px;
-  padding:13px 22px;
-  text-decoration:none;
-  cursor:pointer;
-  font-weight:bold;
-  font-size:15px;
+    display:inline-block;
+    padding:13px 22px;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:bold;
+    margin-right:8px;
+    border:none;
+    cursor:pointer;
 }
 
 .btn-gold{
-  background:#dfa12e;
-  color:#281307;
+    background:#e8b95e;
+    color:#3d2418;
 }
 
-.btn-outline{
-  background:transparent;
-  border:1px solid #e5ad3c;
-  color:#fff;
+.btn-dark{
+    background:#6d321f;
+    color:white;
 }
 
-.btn:hover{
-  transform:translateY(-2px);
-}
-
-/* SECTIONS */
 section{
-  padding:70px 0;
+    padding:70px 7%;
 }
 
-.section-heading{
-  text-align:center;
-  margin-bottom:34px;
+.section-title{
+    text-align:center;
+    margin-bottom:35px;
 }
 
-.eyebrow{
-  color:#b16c15;
-  text-transform:uppercase;
-  letter-spacing:2px;
-  font-size:12px;
-  font-weight:bold;
+.section-title small{
+    color:#a76622;
+    font-weight:bold;
+    letter-spacing:2px;
 }
 
-.section-heading h2{
-  font-family:Georgia,serif;
-  font-size:40px;
-  margin:7px 0;
+.section-title h2{
+    font-size:36px;
+    margin-top:8px;
 }
 
-.section-heading p{
-  color:#765f52;
-}
-
-/* MENU */
 .filters{
-  display:flex;
-  justify-content:center;
-  gap:10px;
-  margin:25px 0 32px;
-  flex-wrap:wrap;
+    display:flex;
+    justify-content:center;
+    gap:10px;
+    margin-bottom:35px;
+    flex-wrap:wrap;
 }
 
-.filter{
-  border:1px solid #dfc28e;
-  background:white;
-  color:#4b2818;
-  padding:9px 18px;
-  border-radius:25px;
-  cursor:pointer;
-  font-weight:bold;
+.filter-btn{
+    border:1px solid #d9b98e;
+    background:white;
+    padding:10px 18px;
+    border-radius:25px;
+    cursor:pointer;
+    color:#5b291a;
+    font-weight:bold;
 }
 
-.filter.active,
-.filter:hover{
-  background:#4a2414;
-  color:white;
+.filter-btn.active,
+.filter-btn:hover{
+    background:#6d321f;
+    color:white;
 }
 
 .menu-grid{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:22px;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
 }
 
 .card{
-  background:white;
-  border:1px solid #ecd8b8;
-  border-radius:18px;
-  overflow:hidden;
-  box-shadow:0 7px 24px rgba(65,30,10,.08);
-  transition:.25s;
+    background:white;
+    border:1px solid #ead8c0;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 8px 25px rgba(80,40,20,.07);
+    transition:.25s;
 }
 
 .card:hover{
-  transform:translateY(-5px);
-  box-shadow:0 14px 30px rgba(65,30,10,.13);
+    transform:translateY(-5px);
+    box-shadow:0 15px 35px rgba(80,40,20,.12);
 }
 
-.card-image{
-  width:100%;
-  height:215px;
-  object-fit:cover;
-  display:block;
+.card img{
+    width:100%;
+    height:210px;
+    object-fit:cover;
+    display:block;
 }
 
 .card-body{
-  padding:18px;
+    padding:20px;
 }
 
-.card h3{
-  font-family:Georgia,serif;
-  font-size:22px;
-  margin-bottom:5px;
+.card-body h3{
+    font-size:21px;
+    margin-bottom:7px;
 }
 
-.card p{
-  color:#725f55;
-  font-size:14px;
-  min-height:45px;
+.card-body p{
+    color:#776457;
+    font-size:14px;
+    min-height:45px;
 }
 
-.card-meta{
-  margin:14px 0;
-  font-size:13px;
-  color:#9a671c;
-  font-weight:bold;
+.price{
+    margin:12px 0;
+    color:#a76622;
+    font-weight:bold;
 }
 
 .recipe-btn{
-  width:100%;
-  padding:11px;
-  border:1px solid #dcb56d;
-  border-radius:10px;
-  background:#fff5df;
-  color:#5b2b16;
-  font-weight:bold;
-  cursor:pointer;
+    width:100%;
+    padding:11px;
+    border:none;
+    border-radius:10px;
+    background:#6d321f;
+    color:white;
+    cursor:pointer;
+    font-weight:bold;
 }
 
 .recipe-btn:hover{
-  background:#f4dfb2;
+    background:#4e2114;
 }
 
 /* RECIPE AI */
 .ai-section{
-  background:linear-gradient(135deg,#fff1dc,#fffaf4);
+    background:#3d2418;
+    color:white;
 }
 
 .ai-box{
-  background:white;
-  border:1px solid #e7cfaa;
-  border-radius:24px;
-  padding:30px;
-  box-shadow:0 12px 35px rgba(70,30,5,.09);
-}
-
-.ai-top{
-  display:flex;
-  align-items:center;
-  gap:18px;
-  margin-bottom:20px;
-}
-
-.ai-icon{
-  width:65px;
-  height:65px;
-  border-radius:18px;
-  display:grid;
-  place-items:center;
-  font-size:32px;
-  background:#4a2414;
-  color:#ffd777;
-}
-
-.ai-top h2{
-  font-family:Georgia,serif;
-  font-size:30px;
-}
-
-.ai-top p{
-  color:#77645b;
-}
-
-.quick-buttons{
-  display:flex;
-  flex-wrap:wrap;
-  gap:8px;
-  margin:18px 0;
-}
-
-.quick{
-  border:1px solid #e4c896;
-  background:#fffaf0;
-  color:#5b321c;
-  border-radius:20px;
-  padding:8px 12px;
-  cursor:pointer;
+    max-width:850px;
+    margin:auto;
+    background:#fffaf3;
+    color:#3d2418;
+    padding:30px;
+    border-radius:22px;
 }
 
 .ai-input-row{
-  display:flex;
-  gap:10px;
+    display:flex;
+    gap:10px;
+    margin:20px 0;
 }
 
-.ai-input{
-  flex:1;
-  padding:15px;
-  border:1px solid #d9c09a;
-  border-radius:12px;
-  font-size:15px;
-  outline:none;
+#recipeInput{
+    flex:1;
+    padding:14px 16px;
+    border:1px solid #d8c0a6;
+    border-radius:12px;
+    outline:none;
+    font-size:16px;
 }
 
-.ai-input:focus{
-  border-color:#c78722;
-  box-shadow:0 0 0 3px rgba(215,154,43,.13);
+#askBtn{
+    padding:14px 22px;
+    border:none;
+    border-radius:12px;
+    background:#6d321f;
+    color:white;
+    font-weight:bold;
+    cursor:pointer;
 }
 
-.ai-result{
-  margin-top:22px;
-  padding:24px;
-  background:#fffaf2;
-  border:1px solid #ead6b5;
-  border-radius:16px;
-  min-height:130px;
+.quick-buttons{
+    display:flex;
+    gap:8px;
+    flex-wrap:wrap;
+    margin-bottom:20px;
 }
 
-.ai-result h3{
-  font-family:Georgia,serif;
-  font-size:25px;
-  margin-bottom:12px;
+.quick-buttons button{
+    border:1px solid #d9b98e;
+    background:white;
+    padding:8px 13px;
+    border-radius:20px;
+    cursor:pointer;
 }
 
-.ai-result h4{
-  margin-top:15px;
-  color:#8a5315;
+#recipeResult{
+    margin-top:20px;
+    padding:22px;
+    background:#fff;
+    border:1px solid #ead8c0;
+    border-radius:15px;
+    display:none;
 }
 
-.ai-result ul,
-.ai-result ol{
-  padding-left:22px;
-  margin-top:7px;
+#recipeResult h3{
+    color:#6d321f;
+    margin-bottom:12px;
 }
 
-.ai-tip{
-  margin-top:16px;
-  padding:12px 14px;
-  border-left:4px solid #d79a2b;
-  background:#fff1d3;
-  border-radius:6px;
+#recipeResult ul{
+    padding-left:20px;
+    margin:10px 0;
+}
+
+#recipeResult li{
+    margin-bottom:5px;
+}
+
+.recipe-error{
+    color:#a33b24;
+    font-weight:bold;
 }
 
 /* ABOUT */
-.about-grid{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:35px;
-  align-items:center;
+.about{
+    background:#f4eadc;
 }
 
-.about-card{
-  background:white;
-  padding:30px;
-  border-radius:20px;
-  border:1px solid #ead6b5;
+.about-box{
+    max-width:900px;
+    margin:auto;
+    text-align:center;
 }
 
-.about-card h2{
-  font-family:Georgia,serif;
-  font-size:38px;
-  margin:8px 0 15px;
-}
-
-.about-card p{
-  color:#6f5a50;
-  margin-bottom:15px;
-}
-
-.special{
-  padding:17px;
-  background:#fff0d2;
-  border-radius:12px;
-  border-left:4px solid #d79a2b;
-}
-
-.about-image{
-  width:100%;
-  height:370px;
-  object-fit:cover;
-  border-radius:20px;
+.about-box p{
+    color:#695548;
+    margin-top:15px;
 }
 
 /* CONTACT */
-.contact-section{
-  background:#3a1b0f;
-  color:white;
-}
-
 .contact-grid{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:18px;
-  margin-top:30px;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+    max-width:1000px;
+    margin:auto;
 }
 
 .contact-card{
-  padding:25px;
-  border:1px solid rgba(255,220,150,.25);
-  background:rgba(255,255,255,.05);
-  border-radius:16px;
-}
-
-.contact-card .icon{
-  font-size:30px;
-  margin-bottom:8px;
+    background:white;
+    padding:25px;
+    text-align:center;
+    border-radius:18px;
+    border:1px solid #ead8c0;
 }
 
 .contact-card h3{
-  color:#ffd778;
-  margin-bottom:5px;
+    margin-bottom:8px;
 }
 
 .contact-card p{
-  color:#f2dfc4;
+    color:#756356;
 }
 
-.contact-actions{
-  display:flex;
-  flex-wrap:wrap;
-  justify-content:center;
-  gap:12px;
-  margin-top:30px;
+.contact-card a{
+    color:#8c4d1e;
+    text-decoration:none;
+    font-weight:bold;
 }
 
-.contact-actions a{
-  text-decoration:none;
-  padding:12px 20px;
-  border-radius:25px;
-  font-weight:bold;
-  border:1px solid #e6b44d;
-  color:white;
-}
-
-.contact-actions a:hover{
-  background:#e6b44d;
-  color:#32170b;
-}
-
-/* FOOTER */
 footer{
-  background:#241007;
-  color:#d9c2a8;
-  text-align:center;
-  padding:22px;
-  font-size:13px;
+    background:#2b1710;
+    color:#eee;
+    text-align:center;
+    padding:25px;
 }
 
 footer strong{
-  color:#f0bd55;
+    color:#f2c66c;
 }
 
 /* MOBILE */
-@media(max-width:900px){
-  .menu-grid{
-    grid-template-columns:repeat(2,1fr);
-  }
+@media(max-width:850px){
+    nav{
+        padding:12px 4%;
+    }
 
-  .contact-grid{
-    grid-template-columns:1fr;
-  }
+    nav ul{
+        display:none;
+    }
 
-  .about-grid{
-    grid-template-columns:1fr;
-  }
+    .menu-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .contact-grid{
+        grid-template-columns:1fr;
+    }
 }
 
-@media(max-width:650px){
-  .nav-inner{
-    min-height:68px;
-  }
+@media(max-width:600px){
+    .hero{
+        min-height:480px;
+        padding:55px 6%;
+    }
 
-  .nav-links{
-    display:none;
-  }
+    section{
+        padding:55px 5%;
+    }
 
-  .logo-text strong{
-    font-size:19px;
-  }
+    .menu-grid{
+        grid-template-columns:1fr;
+    }
 
-  .logo-text span{
-    font-size:8px;
-  }
+    .ai-input-row{
+        flex-direction:column;
+    }
 
-  .logo-mark{
-    width:45px;
-    height:45px;
-  }
+    #askBtn{
+        width:100%;
+    }
 
-  .hero{
-    min-height:600px;
-  }
-
-  .hero h1{
-    font-size:47px;
-  }
-
-  .hero p{
-    font-size:16px;
-  }
-
-  section{
-    padding:50px 0;
-  }
-
-  .section-heading h2{
-    font-size:31px;
-  }
-
-  .menu-grid{
-    grid-template-columns:1fr;
-  }
-
-  .card-image{
-    height:230px;
-  }
-
-  .ai-box{
-    padding:20px;
-  }
-
-  .ai-top h2{
-    font-size:25px;
-  }
-
-  .ai-input-row{
-    flex-direction:column;
-  }
-
-  .about-image{
-    height:280px;
-  }
+    .logo-text h2{
+        font-size:16px;
+    }
 }
 </style>
 </head>
@@ -612,343 +436,287 @@ footer strong{
 <body>
 
 <!-- NAVBAR -->
-<nav class="navbar">
-  <div class="container nav-inner">
+<nav>
+    <div class="logo">
+        <div class="logo-circle">SM</div>
+        <div class="logo-text">
+            <h2>Saini Misthan Bhandar</h2>
+            <span>Traditional Sweets • Bhajeet</span>
+        </div>
+    </div>
 
-    <a href="#home" class="logo">
-      <div class="logo-mark">HL</div>
-      <div class="logo-text">
-        <strong>Heera Lal Sweet</strong>
-        <span>Traditional Sweets • Bhajeet</span>
-      </div>
-    </a>
-
-    <ul class="nav-links">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#menu">Menu</a></li>
-      <li><a href="#recipe-ai">Recipe AI</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#contact">Contact</a></li>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#recipe-ai">Recipe AI</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
     </ul>
-
-  </div>
 </nav>
+
 
 <!-- HERO -->
 <section class="hero" id="home">
-  <div class="container">
     <div class="hero-content">
+        <small>TRADITIONAL RAJASTHANI TASTE</small>
 
-      <div class="badge">★ Traditional Indian Mithai</div>
+        <h1>Saini Misthan Bhandar</h1>
 
-      <h1>
-        Taste the tradition of
-        <span>Heera Lal Sweet</span>
-      </h1>
+        <p>
+            Fresh traditional sweets and snacks made with authentic taste
+            and love in Bhajeet, Alwar.
+        </p>
 
-      <p>
-        Fresh Indian sweets and snacks with traditional taste,
-        quality ingredients and the warmth of a local sweet shop.
-      </p>
-
-      <div class="btn-row">
-        <a class="btn btn-gold" href="#menu">Explore Menu →</a>
-        <a class="btn btn-outline" href="#recipe-ai">🤖 Ask Recipe AI</a>
-      </div>
-
+        <a href="#menu" class="btn btn-gold">Explore Menu</a>
+        <a href="tel:+918078633553" class="btn btn-dark">Call Shop</a>
     </div>
-  </div>
 </section>
+
 
 <!-- MENU -->
 <section id="menu">
-  <div class="container">
 
-    <div class="section-heading">
-      <div class="eyebrow">Our Menu</div>
-      <h2>Fresh Sweets & Snacks</h2>
-      <p>Choose an item and ask our recipe assistant how it is prepared.</p>
+    <div class="section-title">
+        <small>OUR MENU</small>
+        <h2>Fresh Sweets & Snacks</h2>
     </div>
 
     <div class="filters">
-      <button class="filter active" onclick="filterMenu('all',this)">All</button>
-      <button class="filter" onclick="filterMenu('sweet',this)">Sweets</button>
-      <button class="filter" onclick="filterMenu('snack',this)">Snacks</button>
+        <button class="filter-btn active" onclick="filterMenu('all',this)">All</button>
+        <button class="filter-btn" onclick="filterMenu('sweet',this)">Sweets</button>
+        <button class="filter-btn" onclick="filterMenu('snack',this)">Snacks</button>
     </div>
 
     <div class="menu-grid">
 
-      <!-- KALAKAND -->
-      <article class="card menu-item sweet">
-        <img class="card-image"
-        src="https://commons.wikimedia.org/wiki/Special:FilePath/Milk%20Cake.jpg?width=1000"
-        alt="Kalakand Milk Cake">
-
-        <div class="card-body">
-          <h3>⭐ Kalakand / Milk Cake</h3>
-          <p>Rich, milky and traditionally prepared Indian sweet.</p>
-          <div class="card-meta">🍬 Price on request</div>
-          <button class="recipe-btn" onclick="openRecipe('kalakand')">View Recipe</button>
+        <!-- 1 -->
+        <div class="card" data-category="sweet">
+            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Milk%20Cake.jpg?width=1000" alt="Kalakand Milk Cake">
+            <div class="card-body">
+                <h3>⭐ Kalakand / Milk Cake</h3>
+                <p>Our special traditional milk sweet with rich, soft and creamy taste.</p>
+                <div class="price">Price on request</div>
+                <button class="recipe-btn" onclick="openRecipe('kalakand')">View Recipe</button>
+            </div>
         </div>
-      </article>
 
-      <!-- GULAB JAMUN -->
-      <article class="card menu-item sweet">
-        <img class="card-image"
-        src="https://commons.wikimedia.org/wiki/Special:FilePath/Gulab%20jamun%20sweet.jpg?width=1000"
-        alt="Gulab Jamun">
-
-        <div class="card-body">
-          <h3>Gulab Jamun</h3>
-          <p>Soft milk-based dumplings soaked in fragrant sugar syrup.</p>
-          <div class="card-meta">🍬 Price on request</div>
-          <button class="recipe-btn" onclick="openRecipe('gulab-jamun')">View Recipe</button>
+        <!-- 2 -->
+        <div class="card" data-category="sweet">
+            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Gulab%20Jamuns.jpg?width=1000" alt="Gulab Jamun">
+            <div class="card-body">
+                <h3>Gulab Jamun</h3>
+                <p>Soft and juicy milk-solid dumplings soaked in sweet sugar syrup.</p>
+                <div class="price">Price on request</div>
+                <button class="recipe-btn" onclick="openRecipe('gulab-jamun')">View Recipe</button>
+            </div>
         </div>
-      </article>
 
-      <!-- RASGULLA -->
-      <article class="card menu-item sweet">
-        <img class="card-image"
-        src="https://commons.wikimedia.org/wiki/Special:FilePath/Rasgulla.jpg?width=1000"
-        alt="Rasgulla">
-
-        <div class="card-body">
-          <h3>Rasgulla</h3>
-          <p>Soft chenna balls cooked gently in light sugar syrup.</p>
-          <div class="card-meta">🍬 Price on request</div>
-          <button class="recipe-btn" onclick="openRecipe('rasgulla')">View Recipe</button>
+        <!-- 3 -->
+        <div class="card" data-category="sweet">
+            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Rasgulla.jpg?width=1000" alt="Rasgulla">
+            <div class="card-body">
+                <h3>Rasgulla</h3>
+                <p>Soft cottage-cheese balls cooked in light sugar syrup.</p>
+                <div class="price">Price on request</div>
+                <button class="recipe-btn" onclick="openRecipe('rasgulla')">View Recipe</button>
+            </div>
         </div>
-      </article>
 
-      <!-- MOTICHOOR -->
-      <article class="card menu-item sweet">
-        <img class="card-image"
-        src="https://commons.wikimedia.org/wiki/Special:FilePath/Motichoor%20Laddu.jpg?width=1000"
-        alt="Motichoor Laddu">
-
-        <div class="card-body">
-          <h3>Motichoor Laddu</h3>
-          <p>Tiny golden boondi pearls shaped into festive laddus.</p>
-          <div class="card-meta">🍬 Price on request</div>
-          <button class="recipe-btn" onclick="openRecipe('motichoor')">View Recipe</button>
+        <!-- 4 -->
+        <div class="card" data-category="sweet">
+            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Motichoor%20Laddu.jpg?width=1000" alt="Motichoor Laddu">
+            <div class="card-body">
+                <h3>Motichoor Laddu</h3>
+                <p>Fine boondi pearls combined with sugar syrup and aromatic flavours.</p>
+                <div class="price">Price on request</div>
+                <button class="recipe-btn" onclick="openRecipe('motichoor')">View Recipe</button>
+            </div>
         </div>
-      </article>
 
-      <!-- JALEBI -->
-      <article class="card menu-item sweet">
-        <img class="card-image"
-        src="https://commons.wikimedia.org/wiki/Special:FilePath/Jalebi.jpg?width=1000"
-        alt="Jalebi">
-
-        <div class="card-body">
-          <h3>Jalebi</h3>
-          <p>Crispy golden spirals soaked in sweet sugar syrup.</p>
-          <div class="card-meta">🍬 Price on request</div>
-          <button class="recipe-btn" onclick="openRecipe('jalebi')">View Recipe</button>
+        <!-- 5 -->
+        <div class="card" data-category="sweet">
+            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Jalebi.jpg?width=1000" alt="Jalebi">
+            <div class="card-body">
+                <h3>Jalebi</h3>
+                <p>Crispy spiral sweet dipped in fragrant sugar syrup.</p>
+                <div class="price">Price on request</div>
+                <button class="recipe-btn" onclick="openRecipe('jalebi')">View Recipe</button>
+            </div>
         </div>
-      </article>
 
-      <!-- GHEWAR -->
-      <article class="card menu-item sweet">
-        <img class="card-image"
-        src="https://commons.wikimedia.org/wiki/Special:FilePath/Ghevar.jpg?width=1000"
-        alt="Ghewar">
-
-        <div class="card-body">
-          <h3>Ghewar</h3>
-          <p>Traditional Rajasthani honeycomb-style festive sweet.</p>
-          <div class="card-meta">🍬 Price on request</div>
-          <button class="recipe-btn" onclick="openRecipe('ghewar')">View Recipe</button>
+        <!-- 6 -->
+        <div class="card" data-category="sweet">
+            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Ghevar.jpg?width=1000" alt="Ghewar">
+            <div class="card-body">
+                <h3>Ghewar</h3>
+                <p>Traditional Rajasthani disc-shaped sweet with a crisp honeycomb texture.</p>
+                <div class="price">Price on request</div>
+                <button class="recipe-btn" onclick="openRecipe('ghewar')">View Recipe</button>
+            </div>
         </div>
-      </article>
 
-      <!-- SAMOSA -->
-      <article class="card menu-item snack">
-        <img class="card-image"
-        src="https://commons.wikimedia.org/wiki/Special:FilePath/Indian%20samosa.jpg?width=1000"
-        alt="Samosa">
-
-        <div class="card-body">
-          <h3>Samosa</h3>
-          <p>Crispy pastry filled with spiced potato and peas.</p>
-          <div class="card-meta">🥟 Price on request</div>
-          <button class="recipe-btn" onclick="openRecipe('samosa')">View Recipe</button>
+        <!-- 7 -->
+        <div class="card" data-category="snack">
+            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Indian%20samosa.jpg?width=1000" alt="Samosa">
+            <div class="card-body">
+                <h3>Samosa</h3>
+                <p>Crispy pastry filled with a spicy potato and pea mixture.</p>
+                <div class="price">Price on request</div>
+                <button class="recipe-btn" onclick="openRecipe('samosa')">View Recipe</button>
+            </div>
         </div>
-      </article>
 
-      <!-- PYAAZ KACHORI -->
-      <article class="card menu-item snack">
-        <img class="card-image"
-        src="https://commons.wikimedia.org/wiki/Special:FilePath/Pyaaz%20ki%20Kachori.jpg?width=1000"
-        alt="Pyaaz Kachori">
-
-        <div class="card-body">
-          <h3>Pyaaz Kachori</h3>
-          <p>Rajasthani crispy kachori with spicy onion filling.</p>
-          <div class="card-meta">🥟 Price on request</div>
-          <button class="recipe-btn" onclick="openRecipe('pyaz-kachori')">View Recipe</button>
+        <!-- 8 -->
+        <div class="card" data-category="snack">
+            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Pyaaz%20ki%20Kachori.jpg?width=1000" alt="Pyaaz Kachori">
+            <div class="card-body">
+                <h3>Pyaaz Kachori</h3>
+                <p>Rajasthani crispy kachori filled with spicy onion masala.</p>
+                <div class="price">Price on request</div>
+                <button class="recipe-btn" onclick="openRecipe('pyaz-kachori')">View Recipe</button>
+            </div>
         </div>
-      </article>
 
-      <!-- NAMKEEN -->
-      <article class="card menu-item snack">
-        <img class="card-image"
-        src="https://commons.wikimedia.org/wiki/Special:FilePath/Namkeen.jpg?width=1000"
-        alt="Namkeen">
-
-        <div class="card-body">
-          <h3>Namkeen</h3>
-          <p>Crispy Indian savoury snack mix for every occasion.</p>
-          <div class="card-meta">🥨 Price on request</div>
-          <button class="recipe-btn" onclick="openRecipe('namkeen')">View Recipe</button>
+        <!-- 9 -->
+        <div class="card" data-category="snack">
+            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Namkeen.jpg?width=1000" alt="Namkeen">
+            <div class="card-body">
+                <h3>Namkeen</h3>
+                <p>Crunchy and flavourful traditional Indian savoury snack mix.</p>
+                <div class="price">Price on request</div>
+                <button class="recipe-btn" onclick="openRecipe('namkeen')">View Recipe</button>
+            </div>
         </div>
-      </article>
 
     </div>
-  </div>
 </section>
+
 
 <!-- RECIPE AI -->
 <section class="ai-section" id="recipe-ai">
-  <div class="container">
+
+    <div class="section-title">
+        <small style="color:#f2c66c;">RECIPE ASSISTANT</small>
+        <h2 style="color:white;">Recipe AI</h2>
+    </div>
 
     <div class="ai-box">
 
-      <div class="ai-top">
-        <div class="ai-icon">🤖</div>
-        <div>
-          <div class="eyebrow">Smart Feature</div>
-          <h2>Heera Lal Recipe AI</h2>
-          <p>Ask about any sweet or snack from our menu.</p>
+        <p>
+            Ask for a recipe by typing the sweet or snack name.
+            For example: <strong>How to make Kalakand?</strong>
+        </p>
+
+        <div class="ai-input-row">
+            <input
+                id="recipeInput"
+                type="text"
+                placeholder="Type: Kalakand, Gulab Jamun, Samosa..."
+            >
+
+            <button id="askBtn" onclick="askRecipe()">Ask Recipe</button>
         </div>
-      </div>
 
-      <div class="quick-buttons">
-        <button class="quick" onclick="quickAsk('How to make Kalakand?')">Kalakand</button>
-        <button class="quick" onclick="quickAsk('Gulab Jamun recipe')">Gulab Jamun</button>
-        <button class="quick" onclick="quickAsk('How to make Rasgulla?')">Rasgulla</button>
-        <button class="quick" onclick="quickAsk('Motichoor Laddu recipe')">Motichoor Laddu</button>
-        <button class="quick" onclick="quickAsk('Jalebi recipe')">Jalebi</button>
-        <button class="quick" onclick="quickAsk('Ghewar recipe')">Ghewar</button>
-        <button class="quick" onclick="quickAsk('Samosa recipe')">Samosa</button>
-        <button class="quick" onclick="quickAsk('Pyaaz Kachori recipe')">Pyaaz Kachori</button>
-        <button class="quick" onclick="quickAsk('Namkeen recipe')">Namkeen</button>
-      </div>
+        <div class="quick-buttons">
+            <button onclick="quickAsk('Kalakand')">Kalakand</button>
+            <button onclick="quickAsk('Gulab Jamun')">Gulab Jamun</button>
+            <button onclick="quickAsk('Rasgulla')">Rasgulla</button>
+            <button onclick="quickAsk('Motichoor Laddu')">Motichoor</button>
+            <button onclick="quickAsk('Jalebi')">Jalebi</button>
+            <button onclick="quickAsk('Ghewar')">Ghewar</button>
+            <button onclick="quickAsk('Samosa')">Samosa</button>
+            <button onclick="quickAsk('Pyaaz Kachori')">Pyaaz Kachori</button>
+            <button onclick="quickAsk('Namkeen')">Namkeen</button>
+        </div>
 
-      <div class="ai-input-row">
-        <input
-          id="recipeInput"
-          class="ai-input"
-          type="text"
-          placeholder="Example: How to make Kalakand?"
-          onkeydown="if(event.key==='Enter') askRecipe()"
-        >
-
-        <button class="btn btn-gold" onclick="askRecipe()">
-          🤖 Get Recipe
-        </button>
-      </div>
-
-      <div class="ai-result" id="recipeResult">
-        <h3>👨‍🍳 Recipe Assistant</h3>
-        <p>Type a sweet or snack name above and I will show its ingredients, method and chef tip.</p>
-      </div>
+        <div id="recipeResult"></div>
 
     </div>
-  </div>
 </section>
+
 
 <!-- ABOUT -->
-<section id="about">
-  <div class="container about-grid">
+<section class="about" id="about">
 
-    <div class="about-card">
-      <div class="eyebrow">About Us</div>
-      <h2>Made With Tradition</h2>
-
-      <p>
-        Heera Lal Sweet brings together traditional Indian sweets
-        and snacks with a focus on familiar flavours, freshness
-        and quality.
-      </p>
-
-      <div class="special">
-        <strong>⭐ Our Special</strong><br>
-        <b>Kalakand / Milk Cake</b><br>
-        A rich, milky traditional Indian sweet.
-      </div>
+    <div class="section-title">
+        <small>ABOUT US</small>
+        <h2>Saini Misthan Bhandar</h2>
     </div>
 
-    <img
-      class="about-image"
-      src="https://commons.wikimedia.org/wiki/Special:FilePath/Milk%20Cake.jpg?width=1000"
-      alt="Heera Lal Sweet Kalakand"
-    >
+    <div class="about-box">
+        <p>
+            Saini Misthan Bhandar is a traditional sweet and snacks shop
+            serving customers in Bhajeet, Alwar, Rajasthan.
+        </p>
 
-  </div>
+        <p>
+            Our menu includes traditional Indian sweets and snacks,
+            with <strong>Kalakand / Milk Cake</strong> as our special sweet.
+        </p>
+    </div>
+
 </section>
 
-<!-- CONTACT -->
-<section class="contact-section" id="contact">
-  <div class="container">
 
-    <div class="section-heading">
-      <div class="eyebrow" style="color:#f2c15b;">Visit Us</div>
-      <h2 style="color:white;">Heera Lal Sweet</h2>
-      <p style="color:#ead8c1;">
-        Come for traditional sweets and snacks.
-      </p>
+<!-- CONTACT -->
+<section id="contact">
+
+    <div class="section-title">
+        <small>VISIT US</small>
+        <h2>Contact & Location</h2>
     </div>
 
     <div class="contact-grid">
 
-      <div class="contact-card">
-        <div class="icon">📍</div>
-        <h3>Address</h3>
-        <p>Bhajeet, Alwar, Rajasthan</p>
-      </div>
+        <div class="contact-card">
+            <h3>📍 Address</h3>
+            <p>Bhajeet,<br>Alwar, Rajasthan</p>
+        </div>
 
-      <div class="contact-card">
-        <div class="icon">📞</div>
-        <h3>Contact</h3>
-        <p>8078633553</p>
-      </div>
+        <div class="contact-card">
+            <h3>📞 Phone</h3>
+            <p>
+                <a href="tel:+918078633553">
+                    8078633553
+                </a>
+            </p>
+        </div>
 
-      <div class="contact-card">
-        <div class="icon">🕐</div>
-        <h3>Opening Hours</h3>
-        <p>8:00 AM – 9:00 PM</p>
-      </div>
+        <div class="contact-card">
+            <h3>🕐 Opening Hours</h3>
+            <p>8:00 AM – 9:00 PM</p>
+        </div>
 
     </div>
 
-    <div class="contact-actions">
-      <a href="tel:+918078633553">📞 Call Now</a>
+    <div style="text-align:center;margin-top:30px;">
 
-      <a
-        href="https://wa.me/918078633553"
-        target="_blank"
-        rel="noopener"
-      >
-        💬 WhatsApp
-      </a>
+        <a
+          class="btn btn-dark"
+          href="https://wa.me/918078633553"
+          target="_blank">
+          WhatsApp
+        </a>
 
-      <a
-        href="https://www.google.com/maps/search/?api=1&query=Bhajeet%2C%20Alwar%2C%20Rajasthan"
-        target="_blank"
-        rel="noopener"
-      >
-        📍 Open Maps
-      </a>
+        <a
+          class="btn btn-gold"
+          href="https://www.google.com/maps/search/?api=1&query=Bhajeet%2C+Alwar%2C+Rajasthan"
+          target="_blank">
+          Open in Maps
+        </a>
+
     </div>
 
-  </div>
 </section>
 
+
+<!-- FOOTER -->
 <footer>
-  © 2026 <strong>Heera Lal Sweet</strong>
-  &nbsp;•&nbsp; Bhajeet, Alwar, Rajasthan
-  &nbsp;•&nbsp; Food images from Wikimedia Commons
+    <p>
+        © 2026 <strong>Saini Misthan Bhandar</strong>.
+        All Rights Reserved.
+    </p>
+    <p>Bhajeet, Alwar, Rajasthan</p>
 </footer>
 
 
@@ -960,21 +728,125 @@ footer strong{
 
 const recipes = {
 
-  kalakand:{
-    name:"Kalakand / Milk Cake",
-    ingredients:[
-      "1 litre full-fat milk",
-      "2 tablespoons lemon juice",
-      "100 g sugar",
-      "2 tablespoons milk powder",
-      "1/2 teaspoon cardamom powder",
-      "Chopped pistachios for garnish"
-    ],
-    steps:[
-      "Boil the milk in a heavy-bottom pan.",
-      "Add lemon juice slowly and stir until the milk curdles slightly.",
-      "Continue cooking on low heat until most of the moisture evaporates.",
-      "Add sugar and milk powder and keep stirring.",
-      "Cook until the mixture becomes thick and leaves the sides of the pan.",
-      "Transfer to a greased tray, garnish with pistachios and let it set.",
-      "Cut into square pieces and serve."
+    "kalakand": {
+        title: "⭐ Kalakand / Milk Cake Recipe",
+        ingredients: [
+            "1 litre full-fat milk",
+            "2–3 tablespoons sugar",
+            "1 tablespoon lemon juice or vinegar",
+            "1 teaspoon cardamom powder",
+            "Chopped nuts for garnish"
+        ],
+        method: [
+            "Boil the milk in a heavy-bottom pan.",
+            "Keep cooking and stirring until the milk reduces considerably.",
+            "Add lemon juice gradually to slightly curdle the milk.",
+            "Add sugar and cardamom powder.",
+            "Cook until the mixture becomes thick.",
+            "Transfer to a greased tray and let it cool.",
+            "Cut into pieces and garnish with nuts."
+        ],
+        tip: "Slow cooking gives Kalakand a better traditional texture."
+    },
+
+    "gulab-jamun": {
+        title: "🍯 Gulab Jamun Recipe",
+        ingredients: [
+            "Khoya or milk powder",
+            "Maida",
+            "A little milk",
+            "Oil or ghee for frying",
+            "Sugar",
+            "Water",
+            "Cardamom"
+        ],
+        method: [
+            "Prepare a soft dough using khoya, maida and a little milk.",
+            "Make small smooth balls without cracks.",
+            "Deep fry them on low-medium heat until golden brown.",
+            "Prepare sugar syrup with sugar, water and cardamom.",
+            "Put fried jamuns into warm syrup.",
+            "Allow them to soak before serving."
+        ],
+        tip: "Keep the frying temperature moderate so the inside cooks properly."
+    },
+
+    "rasgulla": {
+        title: "⚪ Rasgulla Recipe",
+        ingredients: [
+            "Full-fat milk",
+            "Lemon juice",
+            "Sugar",
+            "Water"
+        ],
+        method: [
+            "Boil milk and curdle it using lemon juice.",
+            "Strain and wash the chenna.",
+            "Knead the chenna until smooth.",
+            "Make small smooth balls.",
+            "Boil sugar and water to make syrup.",
+            "Cook the balls in the boiling syrup until they become soft and spongy."
+        ],
+        tip: "Smoothly kneaded chenna helps make soft Rasgullas."
+    },
+
+    "motichoor": {
+        title: "🟠 Motichoor Laddu Recipe",
+        ingredients: [
+            "Besan",
+            "Sugar",
+            "Water",
+            "Cardamom",
+            "Ghee or oil",
+            "Melon seeds or nuts"
+        ],
+        method: [
+            "Prepare a thin besan batter.",
+            "Make tiny boondi using a fine boondi ladle.",
+            "Fry the boondi lightly.",
+            "Prepare sugar syrup.",
+            "Mix boondi with syrup and cardamom.",
+            "Allow the mixture to cool slightly.",
+            "Shape into round laddus."
+        ],
+        tip: "Very fine boondi gives Motichoor Laddu its classic texture."
+    },
+
+    "jalebi": {
+        title: "🌀 Jalebi Recipe",
+        ingredients: [
+            "Maida",
+            "Curd",
+            "Water",
+            "Sugar",
+            "Saffron or cardamom",
+            "Oil or ghee"
+        ],
+        method: [
+            "Prepare a smooth slightly thick batter using maida, curd and water.",
+            "Let the batter rest.",
+            "Prepare sugar syrup separately.",
+            "Pour batter into a piping bottle.",
+            "Make spiral shapes in hot oil.",
+            "Fry until crisp.",
+            "Dip immediately in warm sugar syrup."
+        ],
+        tip: "The oil should be hot enough to hold the spiral shape without burning it."
+    },
+
+    "ghewar": {
+        title: "🍯 Ghewar Recipe",
+        ingredients: [
+            "Maida",
+            "Ghee",
+            "Cold water",
+            "Milk",
+            "Sugar",
+            "Cardamom"
+        ],
+        method: [
+            "Whisk ghee until light and add cold water gradually.",
+            "Add maida and milk to make a thin batter.",
+            "Heat ghee or oil in a deep wide pan.",
+            "Pour thin streams of batter into the hot fat.",
+            "Repeat until the desired honeycomb stru
